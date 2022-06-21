@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+}
+
+
+
+#outputData{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+}
+[data-set-active = false]{
+    display: none;
+}
+[data-set-active = true]{
+    display: block;
+}
+#gif{
+    position: absolute;
+    height: 20rem;
+    border: 2px solid black;
+    bottom: 25%;
+    left: 0px;
+}
+
+
+.outputContainer{
+    border: 1px solid black ;
+    height: 20rem;
+    width: 70%;
+    text-align: center;
+    
+}
+
+#countryLabel, #cityLabel{
+    color: red;
+    border: 1px solid black;
+    
+}
+
+.listContainer{
+    display: flex;
+}
+
+
+
+
+
+.outputContainer > div{
+    padding: 15px;
+}
+
+* > ul{
+    list-style: none;
+}
+[data-container-all]{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    position: absolute;
+    margin-top: 11vh;
+    border: 1px solid black;
+    height: 30rem;
+    width: 40rem;
+}
+
+.header{
+    position: absolute;
+    top: 0px;
+    border: 1px solid red;
+    height: 10vh;
+    width: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid red;
+    height: 10vh;
+    width: 100%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-container-all>
+    <div class="header">
+        HEADER
+    </div>
+
+    
+    <div id="container" data-container>
+        <form action="#">
+            <ul class="listContainer" id="listContainer">
+                <li>
+                    <label id="countryLabel" for="country">Country :</label>
+                    <input type="inputCountry" name="country" id="inputCountry" class="inputCountry">
+                </li>
+                <li>
+                    <label id="cityLabel" for="city">City :</label>
+                    <input type="inputCity" name="city" id="inputCity" class="inputCity">
+                </li>
+                <li>
+                    <button>Tell me the Weather</button>
+                </li>
+            </ul>
+        </form>
+        <div id="outputData">
+            <div class="outputContainer">
+                <div id="countryOutput">country</div>
+                <div id="cityOutput"   >city</div> 
+                <div id="weatherOutput">weatherOutput</div>
+                <div id="curTemp">curTemp</div>
+                <div id="maxTempOutput">max</div>
+                <div id="minTempOutput">min</div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="gifs">
+        <img data-set-active id="gif" src="#" alt="#">
+    </div>
+    <div class="footer">
+        <FOOTER>footer</FOOTER>
+    </div>
+    
+</body>
+</html>
