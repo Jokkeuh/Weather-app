@@ -32,6 +32,17 @@ container.addEventListener("submit", e =>{
 } )
 
 
+async function setHello(){
+    const hello = await fetch("https://api.giphy.com/v1/gifs/translate?api_key=cHSU0BnzkfhNz4NBoF7TkA5gj8DiZ0jl&s=hello")
+    const gif = document.getElementById("gif")
+
+    const imgData = await hello.json();
+
+            gif.src = imgData.data.images.original.url;
+            gif.style.objectFit = "cover";
+            
+}       
+setHello()
 
 
 
@@ -78,6 +89,7 @@ async function getWeatherData(country, city) {
             const gif = document.getElementById("gif")
             const imgData = await responseGIF.json();
             gif.src = imgData.data.images.original.url;
+            gif.style.objectFit = "cover";
             
             
 
