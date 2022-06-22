@@ -16,14 +16,21 @@
     display: block;
 }
 #gif{
-    position: absolute;
-    height: 20rem;
+    display: inline-flex;
+    height: 10rem;
+    width: 20rem;
     border: 2px solid black;
-    bottom: 25%;
-    left: 0px;
+    
+    z-index: 0;
+}   
+
+#gifs{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    height: 89vh;
+    
 }
-
-
 .outputContainer{
     border: 1px solid black ;
     height: 20rem;
@@ -33,13 +40,15 @@
 }
 
 #countryLabel, #cityLabel{
-    color: red;
-    border: 1px solid black;
-    
+    color: rgb(0, 0, 0);
 }
 
 .listContainer{
+    height: 5rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
